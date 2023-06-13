@@ -1,0 +1,352 @@
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .header__logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        display: block;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #808080;
+}
+
+.menu__link--active {
+    color: #333;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+/* SECTION BANNER */
+.banner {
+    position: relative;
+}
+
+.banner__img {
+    background: url(../img/banner.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 51px);
+}
+
+@media screen and (min-width: 768px) {
+    .banner__img {
+        height: calc(100vh - 72px);
+    }
+}
+
+.banner__title {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__title {
+        font-size: 5.0625rem;
+    }
+}
+
+/* SECTION ABOUT */
+.about {
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        padding: 2.5rem;
+    }
+}
+
+.about__title {
+    color: #da2b1f;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .about__title {
+        font-size: 3.1875rem;
+    }
+}
+
+.about__description {
+    color: #8c8888;
+    font-size: 1.3rem;
+    font-weight: 100;
+
+}
+
+@media screen and (min-width: 768px) {
+    .about__description {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about__description {
+        font-size: 1.75rem;
+        padding: 0 8rem;
+    }
+}
+
+/* SECTION RECIPES */
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-self: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #dab997;
+}
+
+@media screen and (min-width: 768px) {
+    .recipes {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recipes {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem;
+    }
+}
+
+.recipe__card {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.recipe__img {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.recipe__content {
+    padding: 20px;
+}
+
+.recipe__title {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.recipe__description {
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.recipe__button {
+    border: none;
+    color: white;
+    padding: 1rem;
+    background-color: #DA2B1F;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    transition: all .1s ease-in-out;
+}
+
+.recipe__button:hover {
+    background-color: #9f1010;
+    cursor: pointer;
+}
+
+
+/* SECTION PEOPLE */
+.us {
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .us {
+        padding: 5rem 0;
+        text-align: center;
+    }
+}
+
+.us__title {
+    color: #da2b1f;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .us__title {
+        font-size: 3.1875rem;
+    }
+}
+
+.us__description {
+    color: #8c8888;
+    font-size: 1.3rem;
+    font-weight: 100;
+
+}
+
+@media screen and (min-width: 768px) {
+    .us__description {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .us__description {
+        padding: 0 8rem;
+    }
+}
+
+.peoples {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .peoples {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 0;
+        gap: 0;
+    }
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+    .people__img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+.people__img--roberta {
+    background: url(../img/personas/roberta.jpg);
+    background-size: cover;
+    object-fit: contain;
+}
+
+.people__img--marcela {
+    background: url(../img/personas/marcela.jpg);
+    background-size: cover;
+    object-fit: contain;
+}
+
+.people__img--andrea {
+    background: url(../img/personas/andrea.jpg);
+    background-size: cover;
+    object-fit: contain;
+}
+
+.people__name {
+    color: #da2b1f;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .people__name {
+        font-size: 2.3rem;
+        margin: 1.5rem 0;
+    }
+}
+
+.people__function {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer__title,
+.footer__description {
+    color: #8c8888;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    justify-self: center;
+    align-self: center;
+    margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__title,
+    .footer__description {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
+
+.footer__list {
+    justify-self: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
